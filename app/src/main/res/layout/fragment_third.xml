@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ThirdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounder"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="15dp"
+        android:hint="Email"
+        android:layout_marginTop="160dp"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputPas"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounder"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:hint="Password"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reg_button"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPas"
+        android:text="Go"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
